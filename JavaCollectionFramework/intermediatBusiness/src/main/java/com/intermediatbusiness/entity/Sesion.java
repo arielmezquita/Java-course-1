@@ -16,6 +16,7 @@ public class Sesion extends Catalogo {
     private Profesor profesor;
     private Aula aula;
     private Materia materia;
+    private Horario horario;
     private Date fechaInicio;
     private Date fechaFin;
 
@@ -58,8 +59,12 @@ public class Sesion extends Catalogo {
     public void setFechaFin(Date fechaFin) {
         this.fechaFin = fechaFin;
     }
-    
-    
-    
-    
+
+    public Horario getHorario() {
+        return horario;
+    }
+
+    public void setHorario(Horario horario) {
+        this.horario = horario;
+    }
 }

@@ -1,0 +1,15 @@
+com\intermediatbusiness\entity\Materia.class
+com\intermediatbusiness\factory\ApplicationContext.class
+com\intermediatbusiness\enums\DaoEnum.class
+com\intermediatbusiness\entity\Registro.class
+com\intermediatbusiness\entity\Sesion.class
+com\intermediatbusiness\entity\Estudiante.class
+com\intermediatbusiness\entity\Horario.class
+com\intermediatbusiness\entity\Persona.class
+com\intermediatbusiness\factory\ApplicationContext$1.class
+com\intermediatbusiness\entity\Profesor.class
+com\intermediatbusiness\dao\impl\ProfesorDaoImpl.class
+com\intermediatbusiness\dao\ProfesorDao.class
+com\intermediatbusiness\entity\Aula.class
+com\intermediatbusiness\dao\GenericDao.class
+com\intermediatbusiness\entity\Catalogo.class

@@ -7,6 +7,8 @@ package com.intermediatbusiness.dao.impl;
 
 import com.intermediatbusiness.dao.ProfesorDao;
 import com.intermediatbusiness.entity.Profesor;
+
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -15,24 +17,27 @@ import java.util.List;
  */
 public class ProfesorDaoImpl implements ProfesorDao {
 
+    private List<Profesor> profesorList=new ArrayList<>();
+
     @Override
     public void crear(Profesor entity) {
-        System.out.println("Profesor "+ entity.toString()+ " has sido creado exitosamente");
+        profesorList.add(entity);
     }
 
     @Override
     public void modificar(Profesor entity) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        int index=profesorList.indexOf(entity);
+        profesorList.set(index,entity);
     }
 
     @Override
     public Profesor findById(Long id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return profesorList.get(id.intValue());
     }
 
     @Override
     public List<Profesor> findAll() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return profesorList;
     }
 
     

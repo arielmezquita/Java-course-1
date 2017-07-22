@@ -7,7 +7,10 @@ package com.intermediatbusiness.factory;
 
 import com.intermediatbusiness.dao.GenericDao;
 import com.intermediatbusiness.dao.ProfesorDao;
+import com.intermediatbusiness.dao.impl.AulaDaoImpl;
+import com.intermediatbusiness.dao.impl.MateriaDaoImpl;
 import com.intermediatbusiness.dao.impl.ProfesorDaoImpl;
+import com.intermediatbusiness.dao.impl.SesionDaoImpl;
 import com.intermediatbusiness.enums.DaoEnum;
 
 /**
@@ -20,6 +23,12 @@ public class ApplicationContext {
         switch(daoEnum) {
             case PROFESOR_DAO:
                 return new ProfesorDaoImpl();
+            case MATERIA_DAO:
+                return new MateriaDaoImpl();
+            case AULA_DAO:
+                return new AulaDaoImpl();
+            case SESION_DAO:
+                return new SesionDaoImpl();
                
         }
         
