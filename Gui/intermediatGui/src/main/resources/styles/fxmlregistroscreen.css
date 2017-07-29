@@ -1,0 +1,13 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+     -fx-background-color:darkgray;
+    -fx-font-size:10pt;
+}
+
+.menuItem {
+    -fx-background-color:brown;
+    -fx-font-size:14pt;
+}

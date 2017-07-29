@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.intermediatgui.Controller.RegistroScreenController">
+  <children>
+    <BorderPane fx:id="mainLayout" layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0">
+      <top>
+        <VBox>
+          <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Mantenimiento">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#cargarRegistroProfesor" styleClass="menuItem" text="Agregar Profesor" fx:id="profesorItem" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+          </children>
+        </VBox>
+      </top>
+    </BorderPane>
+  </children>
+  <stylesheets>
+    <URL value="@../styles/fxmlregistroscreen.css" />
+  </stylesheets>
+</AnchorPane>

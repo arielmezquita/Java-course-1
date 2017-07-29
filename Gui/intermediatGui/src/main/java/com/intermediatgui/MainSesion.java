@@ -59,9 +59,9 @@ public class MainSesion {
         sesionDao.crear(sesion2);
         sesionDao.crear(sesion3);
 
-        Map<String,Integer> sesionMap=sesionDao.getCantidades(profesorList.get(1),materiaList.get(0));
+        Map<String,Integer> sesionMap=sesionDao.getCantidades(profesorList.get(0),materiaList.get(0));
 
-        System.out.println(sesionMap.get("cantProfesor"));
+        System.out.println(sesionMap);
 
 
         Map<Profesor,List<Sesion>> listMap=sesionDao.findAll().stream().collect(Collectors.groupingBy(Sesion ::getProfesor));
